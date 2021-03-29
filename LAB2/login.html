@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel = "stylesheet" type = "text/css" href = "main.css">
+        <title>Login</title>
+    </head>
+    <body>
+        <h1>Welcome to Internet-Programming Shop</h1>
+        <p><a href=login.html>로그인</a>
+        <a href = "signup.html">회원가입</a></p>
+        <hr color="black">
+        <div>회원 정보 (필수)</div>
+        <div>
+            <label for="username">아이디:
+                <input type="text" id="username" name="username" required />
+            </label>
+        </div>
+        <div>
+            <label for="password">비밀번호:
+                <input type="password" id="password" name="password" placeholder="8자리 이상 12자리 이하" minlength="8" maxlength="12" required />
+            </label>
+        </div>
+        <div>
+            <input type="submit" value ="Login" />
+            <input type="reset" value ="Cancel" />
+        </div>
+    </body>
+</html>
