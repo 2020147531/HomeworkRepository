@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Signup</title>
+        <link rel = "stylesheet" type = "text/css" href = "main.css">
+    </head>
+    <body>
+        <header>
+            <div class="header_h">Welcome to IP market</div>
+            <nav class="menu">           
+                <ul>
+                    <li><a class="link" href="index.html">메인페이지</a></li>
+                    <li><a class="link" href="login.html">로그인</a></li>
+                    <li><a class="link" href="signup.html">회원가입</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="main_head">Sign up</div>
+            <form method="post" action="https://www.example.com" autocomplete="off">
+                <input type="text" id="username" name="username" placeholder="아이디를 입력하세요." required />
+                <br>
+                <input type="password" id="password" name="password" placeholder="비밀번호를 입력하세요." minlength="8" maxlength="12" required />
+                <br>
+                <input type="password" id="password" name="password" placeholder="비밀번호를 다시 입력하세요." minlength="8" maxlength="12" required />
+                <br>
+                <input type="email" id="email" pattern=".+@yonsei.ac.kr" placeholder="이메일을 입력하세요." required />
+                <br>
+                <input type="tel" id="phone" placeholder="핸드폰 번호를 입력해주세요." pattern = "\d{3}-\d{4}-\d{4}" required />
+                <br>
+                <input type="submit" value ="Signup" />
+                <input type="reset" value ="Cancel" />
+            </form>
+        </main>
+        <footer>
+            <div>IP market from Lee J. H.</div>
+        </footer>
+
+    </body>
+</html>
